@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<script src="CSS/jquery/jquery-latest.js"></script>
+<script src="CSS/jquery/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="CSS/jquery/Jan.css" />
+<link rel="stylesheet" href="CSS/jquery/Jan.min.css" />
+<link  rel="stylesheet" href="CSS/jquery/jquery.mobile-1.4.5.min.css" />
+<link rel="icon" href="../MEDIA/favicon.ico"/>
+<script type="text/javascript">function recargar(){window.location.reload();}</script>
+<script src="JS/login.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone" data-theme='j'>
+  <div data-role="header">
+    <h1 onclick="recargar();">Inicio de sesión</h1>
+  </div>
+  <div data-role="main" class="ui-content" data-position="fixed">
+    <p>Nombre de usuario:</p>
+    <input type="text" name="nombre" id="nombre">
+    <p>Contraseña:</p>
+    <p><input type="password" name="contra" id="contra"></p>
+    <p style="text-align: right" onmousedown="mostrarcontra();"><a href="">Mostrar contraseña</a></p>
+    <button class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando..." data-inline="true" id="login" data-role="button" data-icon="user" style="width: 100%">Iniciar sesión</button>
+    <img src="MEDIA/elpadrinologo.jpg" style="width: 100%">
+  </div>
+
+  <div data-role="footer" data-theme="j" data-position="absolute">
+    <h1>Taquería "El Padrino"</h1>
+  </div>
+</div>
+<section id="pageError" data-role="dialog" data-theme="j">
+        <header data-role="header">
+            <h1>Error</h1>
+        </header>
+        <article data-role="content">
+            <p>Contraseña no válida</p>
+            <a href="#" data-role="button" data-rel="back">Aceptar</a>
+        </article>
+    </section>
+    <section id="pageLlenar" data-role="dialog" data-theme="j">
+        <header data-role="header">
+            <h1>Error</h1>
+        </header>
+        <article data-role="content">
+            <p>Rellene todos los campos</p>
+            <a href="#" data-role="button" data-rel="back">Aceptar</a>
+        </article>
+    </section>
+    <section id="pageConexion" data-role="dialog" data-theme="j">
+        <header data-role="header">
+            <h1>Error</h1>
+        </header>
+        <article data-role="content">
+            <p>Conexión no establecida</p>
+            <a href="#" data-role="button" data-rel="back">Aceptar</a>
+        </article>
+    </section>
+    <section id="pageUsuario" data-role="dialog" data-theme="j">
+        <header data-role="header">
+            <h1>Error</h1>
+        </header>
+        <article data-role="content">
+            <p>Usuario no existe</p>
+            <a href="#" data-role="button" data-rel="back">Aceptar</a>
+        </article>
+    </section>
+    <section id="pageProgramacion" data-role="dialog" data-theme="j">
+        <header data-role="header">
+            <h1>Error</h1>
+        </header>
+        <article data-role="content">
+            <p>Problema con la programación del sitio</p>
+            <a href="#" data-role="button" data-rel="back">Aceptar</a>
+        </article>
+    </section>
+</body>
+</html>
